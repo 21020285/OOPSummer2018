@@ -34,11 +34,12 @@ public class Student {
     public String getEmail() {
         return email;
     }
+    
     public void setEmail() {
         this.email = email;
     }
-    /** define student infomation type
-     * Constructor 1
+    /** 
+     * define student infomation type
      */
 
     Student() {
@@ -49,11 +50,11 @@ public class Student {
         email = "uet@vnu.edu.vn";
     }
 
-    /** take infomation from student
-     * Constructor 2
-     * @param n name
-     * @param sid id
-     * @param em email
+    /** 
+     * take infomation from student
+     * @param name first
+     * @param id second
+     * @param email third 
      */
 
     public Student(String name, String id, String email) {
@@ -64,8 +65,8 @@ public class Student {
         this.email = email;
     }
 
-    /** I don't know, maybe copy Student?
-     * Constructor 3
+    /** 
+     * I don't know, maybe copy Student?
      * @param s add like Sutdent
      */
     Student(Student s) {
