@@ -52,7 +52,7 @@ public class StudentManagement {
                     if(sameGroup(students[i], students[j])) {
                         res.append(students[j].getInfo());
                         res.append("\n");
-                        printStudent[i] = true;
+                        printStudent[j] = true;
                     }
                 }
             }
