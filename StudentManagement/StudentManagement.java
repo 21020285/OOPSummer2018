@@ -3,7 +3,9 @@ public class StudentManagement {
     // TODO: khai bao thuoc tinh students la array chua cac doi tuong thuoc lop Student (max. 100)
 
     Student[] students = new Student[100];
-    // check whether 2 student have same class
+   /**
+    * check whether 2 student have same class
+    */
 
     public static boolean sameGroup(Student s1, Student s2) {
         // TODO:
@@ -14,7 +16,7 @@ public class StudentManagement {
     // add student into Student class
 
     public void addStudent(Student newStudent) {
-	    // TODO:
+	// TODO:
         for (int i = 0; i < students.length; i++) {
             if (students[i] == null) {
                 students[i] = new Student(newStudent);
@@ -22,7 +24,10 @@ public class StudentManagement {
             }
         }
     }
-    //return like what question required
+	
+   /**
+    * return like what question required
+    */
 
     public String studentsByGroup() {
         // TODO:
@@ -48,8 +53,8 @@ public class StudentManagement {
             if (!printStudent[i]) {
                 res.append(students[i].getGroup());
                 res.append("\n");
-                for(int j = i; j < attend; j++) {
-                    if(sameGroup(students[i], students[j])) {
+                for (int j = i; j < attend; j++) {
+                    if (sameGroup(students[i], students[j])) {
                         res.append(students[j].getInfo());
                         res.append("\n");
                         printStudent[j] = true;
@@ -60,7 +65,9 @@ public class StudentManagement {
 
 	    return res.toString();
     }
-    //remove student from id infomation
+   /**
+    * remove student from id infomation
+    */
 
     public void removeStudent(String id) {
         // TODO:
